@@ -28,6 +28,7 @@ jobs:
         run: |
           npm install
           npm run build
+          ls -R dist
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
