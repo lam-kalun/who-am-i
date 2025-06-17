@@ -30,12 +30,12 @@ jobs:
           npm run build
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4  # 建议升级
+        uses: actions/configure-pages@v4
 
       # 关键修复：升级上传组件
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2  # 必须升级到 v2
+        uses: actions/upload-pages-artifact@v3
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3  # 建议升级到最新版
+        uses: actions/deploy-pages@v4  # 建议升级到最新版
